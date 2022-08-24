@@ -12,7 +12,7 @@ const App =() => {
   return (
     <> 
       <Header />
-      <Main /> 
+      <Main mensaje='Item List Container mesaje'/> 
       <Footer />
     </>
   );
