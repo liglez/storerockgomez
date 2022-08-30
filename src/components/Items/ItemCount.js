@@ -2,7 +2,7 @@ const { useState } = require("react");
 
 const ItemCount = (props) => {
 
-    const {stock, initial} = props;
+    const {stock, initial, onAdd} = props;
     const [count, setCount] = useState(initial);
     // const [item, setItem] = useState()
     // console.log(initial);
@@ -20,10 +20,7 @@ const ItemCount = (props) => {
         }
    }
    
-   const onAdd =() =>{
-        alert("Se agrego la mercancia al carrito")
-        setCount(0);
-   }
+  
 
     return(
         <div>
@@ -32,7 +29,7 @@ const ItemCount = (props) => {
             <p>Cantidad: {count}</p>
             <p>Stock: {stock}</p>
             <p>initial: {initial}</p>
-            <button disabled={count === 0} onClick={onAdd} >Agregar al carrito</button>
+            <button disabled={count === 0} onClick={() => onAdd(count)} >Agregar al carrito</button>
         </div>
     )
 }
