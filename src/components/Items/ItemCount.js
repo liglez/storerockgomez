@@ -19,6 +19,11 @@ const ItemCount = (props) => {
             setCount(count+1);
         }
    }
+   
+   const onAdd =() =>{
+        alert("Se agrego la mercancia al carrito")
+        setCount(0);
+   }
 
     return(
         <div>
@@ -27,6 +32,7 @@ const ItemCount = (props) => {
             <p>Cantidad: {count}</p>
             <p>Stock: {stock}</p>
             <p>initial: {initial}</p>
+            <button disabled={count === 0} onClick={onAdd} >Agregar al carrito</button>
         </div>
     )
 }

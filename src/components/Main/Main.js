@@ -1,6 +1,7 @@
 import React from 'react'
 import './main.css'
 import ItemListContainer from './ItemListContainer'
+import Text from '../Text'
 
 
 const Main = (props) => {
@@ -11,6 +12,7 @@ const Main = (props) => {
         <ItemListContainer 
           mensaje={props.mensaje} 
         />
+        <Text />
         
     </main>
   )

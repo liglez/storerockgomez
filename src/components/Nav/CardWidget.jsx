@@ -1,6 +1,6 @@
 const CardWidget =()=>{
     return (
-        <span class="material-symbols-outlined"> home </span>
+        <span className="material-symbols-outlined"> home </span>
     )
 }
 
