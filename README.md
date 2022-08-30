@@ -19,3 +19,9 @@ se crea nav para el menu
 Se agrega CardWidget
 Se agrega link para estilos material
 Se agrega itemlistcontainer y se envia parametro 
+
+# cuarto commit 
+se agrega componente itemcount
+    > dentro el itemcount se agrega boton con menos y mas para cambiar valor en pantalla
+se muestrar la informacion dentro del componente itemlistcontainer
+
