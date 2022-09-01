@@ -25,3 +25,6 @@ se agrega componente itemcount
     > dentro el itemcount se agrega boton con menos y mas para cambiar valor en pantalla
 se muestrar la informacion dentro del componente itemlistcontainer
 
+# Quinto commit
+Se agrega modulo item y itemlist e interconectan entre si
+La peticion se realiza y se muestra la informacion de los productos en pantalla

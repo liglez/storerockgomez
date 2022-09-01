@@ -7,13 +7,14 @@ import Text from '../Text'
 const Main = (props) => {
   
   const [test, setTest] = useState(false)
+  // setTest(false)
   console.log(props)
 
   return (
     <main className='contenedor-main'>
         <h2> Bienvenidos </h2>
         <ItemListContainer 
-          mensaje={props.mensaje} 
+          mensaje="Mensaje de bienvenida"
         />
         { test && (
             <Text />

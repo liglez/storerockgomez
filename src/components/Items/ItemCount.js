@@ -5,7 +5,7 @@ const ItemCount = (props) => {
     const {stock, initial, onAdd} = props;
     const [count, setCount] = useState(initial);
     // const [item, setItem] = useState()
-    // console.log(initial);
+    // console.log(initial);n
 
    const Minus = () => {
     console.log('Minus')
@@ -19,9 +19,7 @@ const ItemCount = (props) => {
             setCount(count+1);
         }
    }
-   
   
-
     return(
         <div>
             <button onClick={()=> Minus()}>-</button>
