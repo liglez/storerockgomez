@@ -28,3 +28,8 @@ se muestrar la informacion dentro del componente itemlistcontainer
 # Quinto commit
 Se agrega modulo item y itemlist e interconectan entre si
 La peticion se realiza y se muestra la informacion de los productos en pantalla
+
+# Sexto commit
+Se agrega modulo itemdetailcontainer y itemdetail y se interconectan entre si
+La peticion se realiza en el componente itemdetailcontainer y se la pasamos al ittemdetail
+para mostrar la informacion

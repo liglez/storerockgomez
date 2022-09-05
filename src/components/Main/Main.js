@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './main.css'
 import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer'
 import Text from '../Text'
 
 
 const Main = (props) => {
   
-  const [test, setTest] = useState(false)
+  const [test] = useState(false)
   // setTest(false)
   console.log(props)
 
@@ -20,6 +21,7 @@ const Main = (props) => {
             <Text />
         ) }
         
+        <ItemDetailContainer />
         
     </main>
   )

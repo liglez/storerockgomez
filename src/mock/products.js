@@ -32,4 +32,15 @@ export const products = [
         img: 'https://img.freepik.com/free-psd/white-t-shirt-model-back-view-mockup_125540-860.jpg',
     }    
 
-]
+];
+
+export const productoDetail = [
+    {
+        id:2,
+        title:'remera 2',
+        category: 'remeras',
+        price: 180,
+        stock: 8,
+        img: 'https://img.freepik.com/free-psd/black-t-shirt-model-front-view-mockup_125540-1059.jpg',
+    }
+];

@@ -17,6 +17,8 @@ const ItemsList = (props) => {
         {
             items.map((item)=>{
                 return <Item 
+                            key={item}
+                            id={item.id} 
                             title={item.title} 
                             price={item.price} 
                             category={item.category}
