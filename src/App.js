@@ -6,14 +6,17 @@
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
+import {BrowserRouter} from 'react-router-dom';
 
 const App =() => {
   
   return (
-    <> 
-      <Header />
-      <Main mensaje='Item List Container mesaje'/> 
-      <Footer />
+    <>
+      <BrowserRouter>
+        <Header />
+        <Main mensaje='Item List Container mesaje'/> 
+        <Footer />
+      </BrowserRouter> 
     </>
   );
 }

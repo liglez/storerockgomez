@@ -6,7 +6,7 @@ const ItemsList = (props) => {
     const {items} =props;
     
     useEffect(()=>{
-      console.log(items);
+       console.log(items);
 
     },[items]);
     
@@ -16,14 +16,8 @@ const ItemsList = (props) => {
         <div>ItemsList</div>
         {
             items.map((item)=>{
-                return <Item 
-                            key={item}
-                            id={item.id} 
-                            title={item.title} 
-                            price={item.price} 
-                            category={item.category}
-                            stock={item.stock}
-                            img={item.img}  
+                return <Item key={item.id}
+                            item={item}
                         />
             })
         }

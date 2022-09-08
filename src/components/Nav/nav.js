@@ -1,15 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import CardWidget from './CardWidget';
+import s from './Nav.module.css';
 
-const Nav = () => {
+const Nav = ({isInHedaer}) => {
+  console.log(s)
+
   return (
-    <nav className='menu'>
+    <nav className={isInHedaer ? s.nav : 'bottom' }>
         <ul className='menu-list'>
-            <li className='option'><a href="https://google.com">Productos</a></li>
-            <li className='option'><a href="https://google.com">Nosotros</a></li>
-            <li className='option'><a href="https://google.com">Contacto</a></li>
+              <Link to='/'>Home</Link>
+              <Link to='/category/camisas'>Camisas</Link>
+              <Link to={`/category/gorras`}>Gorras</Link>
+              <Link to='/category/zapatos'>Zapatos</Link>
         </ul>
-      <CardWidget />
+        <Link to='/Cart'>
+          <CardWidget />
+        </Link>
     </nav>
   )
 }

@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0px 10px;
+}
+
+.linkNav {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px;
+    background-color: rgb(55, 145, 241);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+}

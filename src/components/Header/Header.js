@@ -1,10 +1,11 @@
-import Nav from "../Nav/nav";
+import Nav from "../Nav/Nav";
+import s from './Header.module.css';
 
 const Header = () => {
 
     return(
-        <header>
-            <Nav />
+        <header className={s.header}>
+            <Nav isInHedaer={true} />
         </header>
     );
 }

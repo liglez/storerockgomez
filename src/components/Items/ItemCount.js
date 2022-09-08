@@ -8,13 +8,13 @@ const ItemCount = (props) => {
     // console.log(initial);n
 
    const Minus = () => {
-    console.log('Minus')
+    // console.log('Minus')
         if(count > 0 && count >= initial )
             setCount(count-1);
    }
 
    const Add = () => {
-    console.log('Add')
+    // console.log('Add')
         if(stock > initial && count < stock) {
             setCount(count+1);
         }
