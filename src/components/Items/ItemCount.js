@@ -3,7 +3,7 @@ const { useState } = require("react");
 const ItemCount = (props) => {
 
     const {stock, initial, onAdd} = props;
-    const [count, setCount] = useState(initial);
+    const [count, setCount] = useState(initial ? initial : 0);
     // const [item, setItem] = useState()
     // console.log(initial);n
 
@@ -14,7 +14,9 @@ const ItemCount = (props) => {
    }
 
    const Add = () => {
-    // console.log('Add')
+     console.log('Add')
+     console.log(initial);
+     console.log(count);
         if(stock > initial && count < stock) {
             setCount(count+1);
         }
