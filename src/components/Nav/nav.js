@@ -14,7 +14,7 @@ const Nav = ({isInHedaer}) => {
               <Link to={`/category/gorras`}>Gorras</Link>
               <Link to='/category/zapatos'>Zapatos</Link>
         </ul>
-        <Link to='/Cart'>
+        <Link to='/cart'>
           <CardWidget />
         </Link>
     </nav>

@@ -37,3 +37,8 @@ para mostrar la informacion
 Se agregaron rutas al proyecto tanton en los menus como en el detalle del producto. 
 Al darle click sobre el boton de home este te lleva al listado de todos los productos y cada category muestra solo la categoria de esos productos usando parametros.
 tambien se incorporo el detalle del producto al darle click sobre el boton de ver detalle se muestra solo el producto seleccionado.
+
+# Octavo commit
+Sincronizacion de itemcount
+se re-utilizo un componente que ya habiamos hecho anteriormente y se agrega una varialble de estado en itemdetail para asingar la cantidad enviada
+del itemcount a utilizar en el itemdetail para mostrar un mensaje u otro. 
