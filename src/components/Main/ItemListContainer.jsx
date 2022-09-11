@@ -13,7 +13,7 @@ const ItemListContainer = (props) => {
         
         const {category} = useParams();
 
-        console.log('ParametrosURL', category);
+        // console.log('ParametrosURL', category);
 
         const onAdd =(quan) =>{
                 alert("Se agrego la mercancia al carrito")

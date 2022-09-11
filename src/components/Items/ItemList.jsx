@@ -6,7 +6,7 @@ const ItemsList = (props) => {
     const {items} =props;
     
     useEffect(()=>{
-       console.log(items);
+       // console.log(items);
 
     },[items]);
     

@@ -1,18 +1,31 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
+import { useContext } from 'react';
 import ItemCount from './ItemCount';
 
 const ItemDetail = (props) => {
 
   const {  title, price, id, img, stock } = props.product;
+  const {  handleCartUpdate } = useContext(CartContext)
 
   const [cantidad, setCantidad] = useState(0);
 
   const onAdd = (cantidad) => {
     setCantidad(cantidad);
-    console.log('on add', cantidad);
+    // console.log('on add', cantidad); 
+    handleCartUpdate(props.product, cantidad);
+
   }
+
+  // console.log(cart);
+
+  useEffect(()=>{
+    // console.log(handleCartUpdate);
+
+  },[]);
 
   return (
         <>

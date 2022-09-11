@@ -1,12 +1,18 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { CartContext } from '../../context/CartContext';
+import { useContext } from 'react';
 
 const CardWidget =()=>{
+
+    const {cart} = useContext(CartContext);
+
     const [cartCount,setCartCount] = useState(0);
 
     useEffect(()=>{
-        setCartCount(0);
-    },[]);
+        // console.log(cart.length)
+        setCartCount(cart.length);
+    },[cart]);
 
     return (
         <>
