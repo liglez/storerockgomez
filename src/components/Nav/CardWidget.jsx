@@ -5,19 +5,21 @@ import { useContext } from 'react';
 
 const CardWidget =()=>{
 
-    const {cart} = useContext(CartContext);
+    const {cart, cartTotal} = useContext(CartContext);
 
     const [cartCount,setCartCount] = useState(0);
 
     useEffect(()=>{
-        // console.log(cart.length)
-        setCartCount(cart.length);
+        setCartCount(cartTotal('cantidad'));
     },[cart]);
 
     return (
         <>
             <span className="material-symbols-outlined">shopping_cart</span>
+           { cart.length > 0 &&
             <div>{cartCount}</div>
+            }
+           
         </>
     )
 }

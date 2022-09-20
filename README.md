@@ -45,3 +45,6 @@ del itemcount a utilizar en el itemdetail para mostrar un mensaje u otro.
 # noveno
 Use context 
 En el cart.jsx agregue listado los articulos del carrito y funcionalidad para mostrar todos los productos que se han seleccionado. En el cartwidget use el context para mostrart el total de carrito en la compra, al agregar el producto al carrito. Adicional a esto agrega los funciones en el cartContext IsinCart, clearCart, removeItem y handleCartUpdate - en la cual agrego el proceso de agregar o edicion los registros al carrito de compras.
+
+# decimo commit 
+Se agrego funcionalidad para totalizar el carrito total y cantidad adicional se modifico el cardwidget para mostrar el total de productos y no mostrar nada si no se tiene seleccionado informacion.

@@ -15,11 +15,20 @@ const CardProvider = ({children}) => {
 		  );
         console.log(itemCart);
 
-        if(itemCart) 
-            return true;
-        else
-            return false;
+        return itemCart ? true : false;
         
+    }
+
+    // calcular el precio total y tantidad total
+    const cartTotal = (option) => {
+        let total =  0;
+        let cantidad = 0;
+        cart.forEach((item) => {
+            total = total+(item.price*item.cantidad);
+            cantidad = cantidad+item.cantidad;
+        })
+
+        return option ==='Total' ? total : cantidad; 
     }
 
     // Actualizo el carrito de compra -  addItem(item, quantity)
@@ -50,12 +59,11 @@ const CardProvider = ({children}) => {
         setCart(cartFilter)
     }
 
-    // calcular el precio total
 
 
     
     return (
-        <CartContext.Provider value={{ cart, handleCartUpdate, clearCart, removeItem }}>
+        <CartContext.Provider value={{ cart, handleCartUpdate, clearCart, removeItem, cartTotal }}>
             {children}
         </CartContext.Provider>
     );
