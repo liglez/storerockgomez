@@ -6,12 +6,14 @@ import { useParams } from 'react-router-dom';
 import { products } from '../../mock/products';
 import ItemDetail from '../Items/ItemDetail';
 import { productoDetail } from '../../mock/products';
+import { collection, getDoc, doc} from 'firebase/firestore';
+import { db } from "../../firebaseConfig";
+
 
 const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(false)
-
   const { itemID } = useParams();
 
   const itemIDNumber = Number(itemID);
@@ -19,25 +21,28 @@ const ItemDetailContainer = () => {
   // console.log('ItemID', itemID);
 
   const loadDetailProduct = () =>{
-      const api = new Promise((res, rej)=>{
-        
-        const filterProduct = products.find((prod)=> prod.id === itemIDNumber);
+      const itemCollection = collection(db,'productos');
+      const q = doc(itemCollection, itemID);
+      console.log(itemID);
+      console.log(q);
 
-        setTimeout(()=>{
-          res(filterProduct ? filterProduct : productoDetail)
-        },1000)
-      });
-
-      api.then((response)=>{
-          setProduct(response);
-          setLoading(true);
+      getDoc(q).then((resp)=>{
+        console.log(resp.data());
+        setProduct({
+            id: resp.id,
+            ...resp.data()
+        })
       }).catch((error)=>{
-          console.log(error)
+        console.log(error);
+      }).finally(()=>{
+        setLoading(true);
       });
+
   }
 
   useEffect(()=>{
       loadDetailProduct();
+      // eslint-disable-next-line 
   },[]);
   return (
     <>

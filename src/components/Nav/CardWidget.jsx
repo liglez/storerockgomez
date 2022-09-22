@@ -11,6 +11,7 @@ const CardWidget =()=>{
 
     useEffect(()=>{
         setCartCount(cartTotal('cantidad'));
+        // eslint-disable-next-line
     },[cart]);
 
     return (
@@ -25,16 +26,3 @@ const CardWidget =()=>{
 }
 
 export default CardWidget;
-
-/*
-<style>
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-</style>
-
-*/
