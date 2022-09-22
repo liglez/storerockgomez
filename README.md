@@ -48,3 +48,6 @@ En el cart.jsx agregue listado los articulos del carrito y funcionalidad para mo
 
 # decimo commit 
 Se agrego funcionalidad para totalizar el carrito total y cantidad adicional se modifico el cardwidget para mostrar el total de productos y no mostrar nada si no se tiene seleccionado informacion.
+
+# Onceavo commit
+se añadio la conexion a firebase para extraer los datos y posterior a ello realizar peticiones para mostrar los datos en los componentes de itemlistcontainer y itemdetailcontainer.
