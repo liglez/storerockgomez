@@ -51,3 +51,7 @@ Se agrego funcionalidad para totalizar el carrito total y cantidad adicional se 
 
 # Onceavo commit
 se añadio la conexion a firebase para extraer los datos y posterior a ello realizar peticiones para mostrar los datos en los componentes de itemlistcontainer y itemdetailcontainer.
+
+# Doceavo commit
+Se añade metodo para guardar ordenes y entragar numero al cliente de la orden generada 
+

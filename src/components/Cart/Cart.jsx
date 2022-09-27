@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { CartContext } from '../../context/CartContext';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import Form from '../Form/Form';
 // import Item from '../Items/Item';
 
 const Cart = () => {
@@ -33,7 +34,14 @@ const Cart = () => {
             <button onClick={clearCart}> Limpiar carrito</button>
             <h3>Cantidad: {cartTotal('Cantidad')}</h3>
             <h3>Total: $ {cartTotal('Total')} </h3>
-          </div>        
+          </div>  
+          <div>
+            <Form
+             cart={cart}
+             total={cartTotal}
+             clearCart={clearCart}
+              />
+          </div>
       </div>
     )
   }
